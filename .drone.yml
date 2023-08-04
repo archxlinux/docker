@@ -16,6 +16,10 @@ steps:
     image: ghcr.io/supportpal/github-gh-cli 
     commands: 
       - gh auth login --with-token < $GITHUB_TOKEN
+      - gh release create $(git log -1 --pretty='%ad' --date=format:'%Y.%m.%d')
+    volumes:
+    - name: iso
+      path: /tmp/iso 
 
   - name: docker
     image: plugins/docker
