@@ -2,7 +2,7 @@ kind: pipeline
 name: build and publish
 steps:
   - name: build
-    image: archxlinux/builder-docker:0.1
+    image: archxlinux/builder-docker
     pull: always
     privileged: true
     commands:
