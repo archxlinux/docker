@@ -16,6 +16,7 @@ setup_root() {
 
     pkgs='archxlinux-keyring bash coreutils'
     ignore_pkgs='cryptsetup,jfsutils,lvm2,mdadm,nano,netctl,reiserfsprogs,s-nail,vi,xfsprogs,man-pages,systemd,base-devel'
+    pacman -Sy base-devel --noconfirm
     pacstrap -i $newroot $pkgs --noconfirm --ignore $ignore_pkgs
 
     # Chroot into the new system
