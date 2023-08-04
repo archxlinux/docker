@@ -5,6 +5,7 @@ set -e
 setup_root() {
     # Set up the new root directory
     newroot=./root
+    mkdir -p $newroot
 
     # Set the mirrorlist to a local server
     echo 'Server = https://mirror.rackspace.com/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
@@ -45,4 +46,7 @@ setup_root
 tar_rootfs
 create_dockerfile
 build_docker_image
+
+
+sudo rm -rf ./root
 
