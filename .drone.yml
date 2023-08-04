@@ -1,0 +1,12 @@
+kind: pipeline
+name: build and publish
+steps:
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: archxlinux/archxlinux
+      dockerfile: Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
