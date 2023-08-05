@@ -3,7 +3,7 @@ name: build and publish
 steps:
 
   - name: rootfs 
-    image: archxlinux/archxlinux
+    image: archlinux
     command: 
       - ./build.sh
   - name: docker
