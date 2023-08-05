@@ -7,13 +7,6 @@ setup_root() {
     newroot=./root
     mkdir -p $newroot
 
-    # Set the mirrorlist to a local server
-    echo 'Server = https://mirror.rackspace.com/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-    echo '[archx_repo]' >> /etc/pacman.d/mirrorlist 
-    echo 'Server = https://archxlinux.com/$repo/$arch' >> /etc/pacman.d/mirrorlist
-
-
-
     pkgs='archxlinux-keyring bash coreutils'
     ignore_pkgs='cryptsetup,jfsutils,lvm2,mdadm,nano,netctl,reiserfsprogs,s-nail,vi,xfsprogs,man-pages,systemd,base-devel'
     pacman -Sy base-devel --noconfirm
