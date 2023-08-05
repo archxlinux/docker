@@ -30,23 +30,8 @@ tar_rootfs() {
     cd ..
 }
 
-create_dockerfile() {
-    cat << EOF > Dockerfile
-    FROM scratch
-    ADD rootfs.tar.xz /
-    CMD ["/bin/bash"]
-EOF
-}
-
-build_docker_image() {
-    docker build -t archxlinux .
-}
-
-# Call the functions
 setup_root
 tar_rootfs
-create_dockerfile
-build_docker_image
 
 
 sudo rm -rf ./root
