@@ -1,4 +1,4 @@
 FROM archxlinux/archxlinux
 COPY build.sh /entrypoint.sh
-RUN pacman -Sy base-devel --noconfirm
+RUN pacman -Sy arch-install-scripts --noconfirm
 
