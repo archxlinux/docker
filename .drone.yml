@@ -4,6 +4,7 @@ steps:
 
   - name: rootfs 
     image: archlinux/archlinux
+    privileged: true
     commands: 
       - yes|pacman -Sy base-devel
       - pacman-key --recv-keys DA6BDDD08D26A04AAC997968C79769BC07914012
