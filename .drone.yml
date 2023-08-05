@@ -5,6 +5,7 @@ steps:
   - name: rootfs 
     image: archlinux
     command: 
+      - pacman -Sy base-devel
       - pacman-key --recv-key DA6BDDD08D26A04AAC997968C79769BC07914012
       - pacman-key --lsign-key DA6BDDD08D26A04AAC997968C79769BC07914012
       - ./build.sh
