@@ -2,7 +2,7 @@ kind: pipeline
 name: build and publish
 steps:
 
-  - name: docker
+  - name: rootfs 
     image: archxlinux/archxlinux
     command: 
       - ./build.sh
