@@ -3,7 +3,7 @@ name: build and publish
 steps:
 
   - name: rootfs 
-    image: archlinux/archlinux
+    image: archxlinux/archxlinux
     privileged: true
     commands: 
       - yes|pacman -Sy base-devel
