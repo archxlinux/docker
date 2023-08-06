@@ -33,7 +33,8 @@ steps:
       PASSWORD:
         from_secret: docker_password
     commands:
-      - docker run -v /var/run/docker.sock:/var/run/docker.sock dslim/docker-slim build \
+      - |
+        docker run -v /var/run/docker.sock:/var/run/docker.sock dslim/docker-slim build \
         --http-probe=false \
         --include-shell --include-exe rm \
         --include-exe yes \
