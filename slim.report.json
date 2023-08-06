@@ -21,25 +21,17 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:213f0391afceab722a34d69cef90425b2d6ec246b79f554150757e021f42befd",
+      "id": "sha256:c8e0c7472acbe65cef4cddf6c2aa101a4e4f8dfad969d307d9d468e58d719637",
       "tags": [
-        "latest",
-        "slim"
+        "latest"
       ],
       "names": [
-        "archxlinux/archxlinux:latest",
-        "archxlinux/archxlinux:slim"
-      ],
-      "digests": [
-        "sha256:f7776f68b94fee8a2e0ab2a3a2d954bb2606a04e57874c295f8884a833a506f0"
-      ],
-      "full_digests": [
-        "archxlinux/archxlinux@sha256:f7776f68b94fee8a2e0ab2a3a2d954bb2606a04e57874c295f8884a833a506f0"
+        "archxlinux/archxlinux:latest"
       ]
     },
-    "size": 560076675,
+    "size": 560143570,
     "size_human": "560 MB",
-    "create_time": "2023-08-05T21:50:56Z",
+    "create_time": "2023-08-06T07:20:14Z",
     "docker_version": "24.0.5",
     "architecture": "amd64",
     "os": "linux",
@@ -54,47 +46,46 @@
   "minified_image_size_human": "25 MB",
   "minified_image": "archxlinux/archxlinux.slim",
   "minified_image_has_data": true,
-  "minified_by": 22.466151954688765,
-  "artifact_location": "/tmp/slim-state/.slim-state/images/213f0391afceab722a34d69cef90425b2d6ec246b79f554150757e021f42befd/artifacts",
+  "minified_by": 22.468835289492898,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/c8e0c7472acbe65cef4cddf6c2aa101a4e4f8dfad969d307d9d468e58d719637/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "archxlinux-archxlinux-seccomp.json",
   "apparmor_profile_name": "archxlinux-archxlinux-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:213f0391afceab722a34d69cef90425b2d6ec246b79f554150757e021f42befd",
+      "id": "sha256:c8e0c7472acbe65cef4cddf6c2aa101a4e4f8dfad969d307d9d468e58d719637",
       "full_name": "archxlinux/archxlinux:latest",
       "repo_name": "archxlinux/archxlinux",
       "version_tag": "latest",
       "raw_tags": [
-        "archxlinux/archxlinux:latest",
-        "archxlinux/archxlinux:slim"
+        "archxlinux/archxlinux:latest"
       ],
-      "create_time": "2023-08-05T21:50:56Z",
-      "new_size": 560076675,
+      "create_time": "2023-08-06T07:20:14Z",
+      "new_size": 560143570,
       "new_size_human": "560 MB",
       "instructions": [
         {
           "type": "ADD",
-          "time": "2023-08-05T21:50:54Z",
+          "time": "2023-08-06T07:20:12Z",
           "is_nop": true,
           "local_image_exists": true,
-          "intermediate_image_id": "sha256:e48d1a0999ff47462825f79da5fef5746152942c36f742a14629df9d2794f959",
+          "intermediate_image_id": "sha256:a872bb182e36627b68cc75da99e92f0830c2e37735b6edd4eadee8eb4d567ea7",
           "layer_index": 0,
-          "size": 560076675,
+          "size": 560143570,
           "size_human": "560 MB",
-          "params": "file:854eaa41a7efd29ae9e88d39f45f4a4a905f8eb7b351fe7dda2d948e5aac856e in /",
-          "command_snippet": "ADD file:854eaa41a7efd29ae9e88d39f45f4a4a905...",
-          "command_all": "ADD file:854eaa41a7efd29ae9e88d39f45f4a4a905f8eb7b351fe7dda2d948e5aac856e /",
+          "params": "file:c6484b839ce26304ef651fa195477de2e96ba954837871bf0be695fc9554c857 in /",
+          "command_snippet": "ADD file:c6484b839ce26304ef651fa195477de2e96...",
+          "command_all": "ADD file:c6484b839ce26304ef651fa195477de2e96ba954837871bf0be695fc9554c857 /",
           "target": "/",
           "source_type": "file",
-          "inst_set_time_bucket": "2023-08-05T23:45:00+02:00",
+          "inst_set_time_bucket": "2023-08-06T09:15:00+02:00",
           "inst_set_time_index": 0,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "CMD",
-          "time": "2023-08-05T21:50:56Z",
+          "time": "2023-08-06T07:20:14Z",
           "is_last_instruction": true,
           "is_nop": true,
           "is_exec_form": true,
@@ -105,10 +96,9 @@
           "command_snippet": "CMD [\"/bin/bash\"]\n",
           "command_all": "CMD [\"/bin/bash\"]\n",
           "raw_tags": [
-            "archxlinux/archxlinux:latest",
-            "archxlinux/archxlinux:slim"
+            "archxlinux/archxlinux:latest"
           ],
-          "inst_set_time_bucket": "2023-08-05T23:45:00+02:00",
+          "inst_set_time_bucket": "2023-08-06T09:15:00+02:00",
           "inst_set_time_index": 0,
           "inst_set_time_reverse_index": 0
         }
