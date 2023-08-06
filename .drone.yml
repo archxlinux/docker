@@ -14,7 +14,7 @@ steps:
       - yes|pacman -Sy base-devel
       - pacman-key --recv-keys DA6BDDD08D26A04AAC997968C79769BC07914012
       - ./build.sh
-  - name: docker
+  - name: docker-fat
     image: plugins/docker
     settings:
       repo: archxlinux/archxlinux
@@ -23,3 +23,23 @@ steps:
         from_secret: docker_username
       password:
         from_secret: docker_password
+
+  - name: docker-slim 
+    image: docker:dind 
+    environment:
+      USERNAME:
+        from_secret: docker_username
+      PASSWORD:
+        from_secret: docker_password
+    commands:
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock dslim/docker-slim build --tag $TAG_WITH_VERSION_SLIM $TAG_WITH_VERSION
+      - docker images
+      - docker login -u $USERNAME -p $PASSWORD
+      - docker push $TAG_WITH_VERSION_SLIM
+    volumes:
+      - name: dockersock
+        path: /var/run
+ 
+volumes:
+  - name: dockersock
+    temp: {}
