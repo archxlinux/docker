@@ -39,8 +39,9 @@ steps:
       - docker push $TAG_WITH_VERSION_SLIM
     volumes:
       - name: dockersock
-        path: /var/run
+        path: /var/run/docker.sock
  
 volumes:
   - name: dockersock
-    temp: {}
+    path: /var/run/docker.sock 
+
