@@ -21,7 +21,7 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:acab989f1efd77e2c0b03980640efe70ccaef9b462e7f8af30d7e151485b83d0",
+      "id": "sha256:949337f610612c1e1a09d23094c3e264bc454690863cf988527ba94360a7a84f",
       "tags": [
         "latest"
       ],
@@ -29,9 +29,9 @@
         "archxlinux/archxlinux:latest"
       ]
     },
-    "size": 560142087,
+    "size": 560141975,
     "size_human": "560 MB",
-    "create_time": "2023-08-06T09:36:32Z",
+    "create_time": "2023-08-06T11:59:41Z",
     "docker_version": "24.0.5",
     "architecture": "amd64",
     "os": "linux",
@@ -42,50 +42,50 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 53010641,
+  "minified_image_size": 53244001,
   "minified_image_size_human": "53 MB",
   "minified_image": "archxlinux/archxlinux.slim",
   "minified_image_has_data": true,
-  "minified_by": 10.566597129055655,
-  "artifact_location": "/tmp/slim-state/.slim-state/images/acab989f1efd77e2c0b03980640efe70ccaef9b462e7f8af30d7e151485b83d0/artifacts",
+  "minified_by": 10.520283308536486,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/949337f610612c1e1a09d23094c3e264bc454690863cf988527ba94360a7a84f/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "archxlinux-archxlinux-seccomp.json",
   "apparmor_profile_name": "archxlinux-archxlinux-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:acab989f1efd77e2c0b03980640efe70ccaef9b462e7f8af30d7e151485b83d0",
+      "id": "sha256:949337f610612c1e1a09d23094c3e264bc454690863cf988527ba94360a7a84f",
       "full_name": "archxlinux/archxlinux:latest",
       "repo_name": "archxlinux/archxlinux",
       "version_tag": "latest",
       "raw_tags": [
         "archxlinux/archxlinux:latest"
       ],
-      "create_time": "2023-08-06T09:36:32Z",
-      "new_size": 560142087,
+      "create_time": "2023-08-06T11:59:41Z",
+      "new_size": 560141975,
       "new_size_human": "560 MB",
       "instructions": [
         {
           "type": "ADD",
-          "time": "2023-08-06T09:09:38Z",
+          "time": "2023-08-06T11:59:39Z",
           "is_nop": true,
           "local_image_exists": true,
-          "intermediate_image_id": "sha256:ae6ba416351bef75472e835bd0a651c0079ba7fd18e3f433955c56bd0446fdaa",
+          "intermediate_image_id": "sha256:3dda5b662e8c59a7d6641063a4df4ab355a7cb496af221ea67b4bcd55af0be88",
           "layer_index": 0,
-          "size": 560142087,
+          "size": 560141975,
           "size_human": "560 MB",
-          "params": "file:fd5ad3e43176bdff70d6bed9a69452a888df074841741091375e7dc5947cc5e8 in /",
-          "command_snippet": "ADD file:fd5ad3e43176bdff70d6bed9a69452a888d...",
-          "command_all": "ADD file:fd5ad3e43176bdff70d6bed9a69452a888df074841741091375e7dc5947cc5e8 /",
+          "params": "file:eeca2ffd4a4ef7138c4829755f95d112b89d8cdd36c4cbdaa6ab499490e771b6 in /",
+          "command_snippet": "ADD file:eeca2ffd4a4ef7138c4829755f95d112b89...",
+          "command_all": "ADD file:eeca2ffd4a4ef7138c4829755f95d112b89d8cdd36c4cbdaa6ab499490e771b6 /",
           "target": "/",
           "source_type": "file",
-          "inst_set_time_bucket": "2023-08-06T11:00:00+02:00",
+          "inst_set_time_bucket": "2023-08-06T13:45:00+02:00",
           "inst_set_time_index": 0,
-          "inst_set_time_reverse_index": 1
+          "inst_set_time_reverse_index": 0
         },
         {
           "type": "CMD",
-          "time": "2023-08-06T09:36:32Z",
+          "time": "2023-08-06T11:59:41Z",
           "is_last_instruction": true,
           "is_nop": true,
           "is_exec_form": true,
@@ -98,8 +98,8 @@
           "raw_tags": [
             "archxlinux/archxlinux:latest"
           ],
-          "inst_set_time_bucket": "2023-08-06T11:30:00+02:00",
-          "inst_set_time_index": 1,
+          "inst_set_time_bucket": "2023-08-06T13:45:00+02:00",
+          "inst_set_time_index": 0,
           "inst_set_time_reverse_index": 0
         }
       ]
