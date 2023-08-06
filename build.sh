@@ -26,5 +26,5 @@ setup_root
 tar_rootfs
 
 
-sudo rm -rf ./root
+rm -rf ./root
 
