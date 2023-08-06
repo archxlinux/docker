@@ -4,6 +4,7 @@ steps:
 
   - name: rootfs 
     image: archxlinux/archxlinux
+    pull: always
     privileged: true
     commands: 
       - pacman-key --init
