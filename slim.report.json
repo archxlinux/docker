@@ -1,0 +1,120 @@
+{
+  "version": "1.1",
+  "engine": "linux|Transformer|1.40.3|155f1b79556b7d100726f5ef4633f81a6ed27a2b|2023-07-13_07:46:40AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "ArcoLinux",
+    "version": "",
+    "display_name": "ArcoLinux "
+  },
+  "type": "build",
+  "state": "done",
+  "target_reference": "archxlinux/archxlinux",
+  "system": {
+    "type": "",
+    "release": "",
+    "distro": {
+      "name": "",
+      "version": "",
+      "display_name": ""
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": "sha256:213f0391afceab722a34d69cef90425b2d6ec246b79f554150757e021f42befd",
+      "tags": [
+        "latest",
+        "slim"
+      ],
+      "names": [
+        "archxlinux/archxlinux:latest",
+        "archxlinux/archxlinux:slim"
+      ],
+      "digests": [
+        "sha256:f7776f68b94fee8a2e0ab2a3a2d954bb2606a04e57874c295f8884a833a506f0"
+      ],
+      "full_digests": [
+        "archxlinux/archxlinux@sha256:f7776f68b94fee8a2e0ab2a3a2d954bb2606a04e57874c295f8884a833a506f0"
+      ]
+    },
+    "size": 560076675,
+    "size_human": "560 MB",
+    "create_time": "2023-08-05T21:50:56Z",
+    "docker_version": "24.0.5",
+    "architecture": "amd64",
+    "os": "linux",
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 24929800,
+  "minified_image_size_human": "25 MB",
+  "minified_image": "archxlinux/archxlinux.slim",
+  "minified_image_has_data": true,
+  "minified_by": 22.466151954688765,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/213f0391afceab722a34d69cef90425b2d6ec246b79f554150757e021f42befd/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "archxlinux-archxlinux-seccomp.json",
+  "apparmor_profile_name": "archxlinux-archxlinux-apparmor-profile",
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:213f0391afceab722a34d69cef90425b2d6ec246b79f554150757e021f42befd",
+      "full_name": "archxlinux/archxlinux:latest",
+      "repo_name": "archxlinux/archxlinux",
+      "version_tag": "latest",
+      "raw_tags": [
+        "archxlinux/archxlinux:latest",
+        "archxlinux/archxlinux:slim"
+      ],
+      "create_time": "2023-08-05T21:50:56Z",
+      "new_size": 560076675,
+      "new_size_human": "560 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2023-08-05T21:50:54Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:e48d1a0999ff47462825f79da5fef5746152942c36f742a14629df9d2794f959",
+          "layer_index": 0,
+          "size": 560076675,
+          "size_human": "560 MB",
+          "params": "file:854eaa41a7efd29ae9e88d39f45f4a4a905f8eb7b351fe7dda2d948e5aac856e in /",
+          "command_snippet": "ADD file:854eaa41a7efd29ae9e88d39f45f4a4a905...",
+          "command_all": "ADD file:854eaa41a7efd29ae9e88d39f45f4a4a905f8eb7b351fe7dda2d948e5aac856e /",
+          "target": "/",
+          "source_type": "file",
+          "inst_set_time_bucket": "2023-08-05T23:45:00+02:00",
+          "inst_set_time_index": 0,
+          "inst_set_time_reverse_index": 0
+        },
+        {
+          "type": "CMD",
+          "time": "2023-08-05T21:50:56Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"/bin/bash\"]\n",
+          "command_snippet": "CMD [\"/bin/bash\"]\n",
+          "command_all": "CMD [\"/bin/bash\"]\n",
+          "raw_tags": [
+            "archxlinux/archxlinux:latest",
+            "archxlinux/archxlinux:slim"
+          ],
+          "inst_set_time_bucket": "2023-08-05T23:45:00+02:00",
+          "inst_set_time_index": 0,
+          "inst_set_time_reverse_index": 0
+        }
+      ]
+    }
+  ],
+  "image_created": true,
+  "image_build_engine": "docker"
+}
