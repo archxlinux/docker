@@ -21,7 +21,7 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:99d60cbc6e0b1a602cc045499b0039ab448a4e39285c9ab9507343b0169279bc",
+      "id": "sha256:acab989f1efd77e2c0b03980640efe70ccaef9b462e7f8af30d7e151485b83d0",
       "tags": [
         "latest"
       ],
@@ -29,9 +29,9 @@
         "archxlinux/archxlinux:latest"
       ]
     },
-    "size": 560143574,
+    "size": 560142087,
     "size_human": "560 MB",
-    "create_time": "2023-08-06T08:59:03Z",
+    "create_time": "2023-08-06T09:36:32Z",
     "docker_version": "24.0.5",
     "architecture": "amd64",
     "os": "linux",
@@ -42,63 +42,63 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 52088403,
-  "minified_image_size_human": "52 MB",
+  "minified_image_size": 53010641,
+  "minified_image_size_human": "53 MB",
   "minified_image": "archxlinux/archxlinux.slim",
   "minified_image_has_data": true,
-  "minified_by": 10.753709880489136,
-  "artifact_location": "/tmp/slim-state/.slim-state/images/99d60cbc6e0b1a602cc045499b0039ab448a4e39285c9ab9507343b0169279bc/artifacts",
+  "minified_by": 10.566597129055655,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/acab989f1efd77e2c0b03980640efe70ccaef9b462e7f8af30d7e151485b83d0/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "archxlinux-archxlinux-seccomp.json",
   "apparmor_profile_name": "archxlinux-archxlinux-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:99d60cbc6e0b1a602cc045499b0039ab448a4e39285c9ab9507343b0169279bc",
+      "id": "sha256:acab989f1efd77e2c0b03980640efe70ccaef9b462e7f8af30d7e151485b83d0",
       "full_name": "archxlinux/archxlinux:latest",
       "repo_name": "archxlinux/archxlinux",
       "version_tag": "latest",
       "raw_tags": [
         "archxlinux/archxlinux:latest"
       ],
-      "create_time": "2023-08-06T08:59:03Z",
-      "new_size": 560143574,
+      "create_time": "2023-08-06T09:36:32Z",
+      "new_size": 560142087,
       "new_size_human": "560 MB",
       "instructions": [
         {
           "type": "ADD",
-          "time": "2023-08-06T08:34:05Z",
+          "time": "2023-08-06T09:09:38Z",
           "is_nop": true,
           "local_image_exists": true,
-          "intermediate_image_id": "sha256:5f1d4e5e9c6491daf9d7963745356eb4dbdabcefdcef04e49fe747c649368b99",
+          "intermediate_image_id": "sha256:ae6ba416351bef75472e835bd0a651c0079ba7fd18e3f433955c56bd0446fdaa",
           "layer_index": 0,
-          "size": 560143574,
+          "size": 560142087,
           "size_human": "560 MB",
-          "params": "file:d2426f3708ab7f1f6520eaeb311470ad82f95823bae5348aac2a51496de04170 in /",
-          "command_snippet": "ADD file:d2426f3708ab7f1f6520eaeb311470ad82f...",
-          "command_all": "ADD file:d2426f3708ab7f1f6520eaeb311470ad82f95823bae5348aac2a51496de04170 /",
+          "params": "file:fd5ad3e43176bdff70d6bed9a69452a888df074841741091375e7dc5947cc5e8 in /",
+          "command_snippet": "ADD file:fd5ad3e43176bdff70d6bed9a69452a888d...",
+          "command_all": "ADD file:fd5ad3e43176bdff70d6bed9a69452a888df074841741091375e7dc5947cc5e8 /",
           "target": "/",
           "source_type": "file",
-          "inst_set_time_bucket": "2023-08-06T10:30:00+02:00",
+          "inst_set_time_bucket": "2023-08-06T11:00:00+02:00",
           "inst_set_time_index": 0,
           "inst_set_time_reverse_index": 1
         },
         {
           "type": "CMD",
-          "time": "2023-08-06T08:59:03Z",
+          "time": "2023-08-06T09:36:32Z",
           "is_last_instruction": true,
           "is_nop": true,
           "is_exec_form": true,
           "local_image_exists": true,
           "layer_index": 0,
           "size": 0,
-          "params": "[\"/bin/bash\",\"-c\",\"pacman-key --recv-keys DA6BDDD08D26A04AAC997968C79769BC07914012\"]\n",
-          "command_snippet": "CMD [\"/bin/bash\",\"-c\",\"pacman-key --recv-key...",
-          "command_all": "CMD [\"/bin/bash\",\"-c\",\"pacman-key --recv-keys DA6BDDD08D26A04AAC997968C79769BC07914012\"]\n",
+          "params": "[\"/bin/bash\",\"-c\",\"pacman -Sy base\"]\n",
+          "command_snippet": "CMD [\"/bin/bash\",\"-c\",\"pacman -Sy base\"]\n",
+          "command_all": "CMD [\"/bin/bash\",\"-c\",\"pacman -Sy base\"]\n",
           "raw_tags": [
             "archxlinux/archxlinux:latest"
           ],
-          "inst_set_time_bucket": "2023-08-06T10:45:00+02:00",
+          "inst_set_time_bucket": "2023-08-06T11:30:00+02:00",
           "inst_set_time_index": 1,
           "inst_set_time_reverse_index": 0
         }
