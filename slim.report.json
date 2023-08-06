@@ -42,11 +42,11 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 52205737,
+  "minified_image_size": 52261185,
   "minified_image_size_human": "52 MB",
   "minified_image": "archxlinux/archxlinux.slim",
   "minified_image_has_data": true,
-  "minified_by": 10.729509957880683,
+  "minified_by": 10.718126177200153,
   "artifact_location": "/tmp/slim-state/.slim-state/images/85e043dda1256f862c1c8cb320c56dffce52e070d59bd07f3ec271958a89ba29/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "archxlinux-archxlinux-seccomp.json",
