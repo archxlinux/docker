@@ -33,7 +33,57 @@ steps:
       PASSWORD:
         from_secret: docker_password
     commands:
-      - docker run -v /var/run/docker.sock:/var/run/docker.sock dslim/docker-slim build --tag $TAG_WITH_VERSION_SLIM $TAG_WITH_VERSION
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock dslim/docker-slim build \
+--http-probe=false \
+--include-shell --include-exe rm \
+--include-exe yes \
+--include-exe pacman \
+--include-exe gnupg \
+--include-exe pacman-key \
+--include-exe gpg \
+--include-exe gpg2 \
+--include-exe chmod \
+--include-exe mkdir \
+--include-exe touch \
+--include-exe chmod \
+--include-exe vercmp \
+--include-exe wc \
+--include-exe pacman-conf \
+--include-exe gpg-agent \
+--include-exe dirmngr \
+--include-exe cp \
+--include-exe xz \
+--include-exe tar \
+--include-exe mv \
+--include-exe ls \
+--include-exe mv \
+--include-path /etc/pacman.conf \
+--include-path /etc/pacman.d/ \
+--include-path /var/lib/pacman/ \
+--include-path /usr/bin/pacman-key \
+--include-path /usr/share/makepkg \
+--include-path /usr/share/pacman/keyrings \
+--include-path /usr/share/ca-certificates \
+--include-path /usr/lib/libcrypt.so.2 \
+--include-path /usr/lib/libcrypt.so.2.0.0 \
+--include-path /usr/lib/libgcc_s.so.1 \
+--include-path /usr/lib/libblkid.so.1.1.0 \
+--include-path /usr/lib/libblkid.so \
+--include-path /usr/lib/libblkid.so.1 \
+--include-path /usr/lib/libmount.so.1.1.0 \
+--include-path /usr/lib/libmount.so.1 \
+--include-path /usr/lib/libmount.so.1.1.0 \
+--include-path /usr/lib/libmount.so \
+--include-path /usr/lib/libpam.so.0 \
+--include-path /usr/lib/libpam.so.0.85.1 \
+--include-path /usr/lib/libaudit.so \
+--include-path /usr/lib/libaudit.so.1.0.0 \
+--include-path /usr/lib/libaudit.so.1 \
+--include-path /usr/lib/sudo/ \
+--include-path /usr/lib/libcap-ng.so.0 \
+--include-path /usr/lib/libcap-ng.so.0.0.0 \
+--include-path /var/lib/pacman/ \
+archxlinux/archxlinux pacman
       - docker images
       - docker login -u $USERNAME -p $PASSWORD
       - docker push $TAG_WITH_VERSION_SLIM
