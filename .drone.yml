@@ -10,8 +10,8 @@ steps:
     commands: 
       - pacman-key --init
       - pacman-key --populate
-      - pacman-key --recv-keys DA6BDDD08D26A04AAC997968C79769BC07914012
       - yes|pacman -Sy base-devel
+      - pacman-key --recv-keys DA6BDDD08D26A04AAC997968C79769BC07914012
       - ./build.sh
   - name: docker
     image: plugins/docker
