@@ -87,7 +87,7 @@ steps:
         archxlinux/archxlinux pacman
       - docker images
       - docker login -u $USERNAME -p $PASSWORD
-      - docker tag archxlinux/archxlinux archxlinux/archxlinux:slim
+      - docker tag archxlinux/archxlinux.slim archxlinux/archxlinux:slim  
       - docker push archxlinux/archxlinux:slim 
     volumes:
       - name: dockersock
