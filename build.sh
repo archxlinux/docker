@@ -9,7 +9,7 @@ setup_root() {
     pkgs='archxlinux-keyring bash coreutils pacman ca-certificates'
     ignore_pkgs='cryptsetup,jfsutils,lvm2,mdadm,nano,netctl,reiserfsprogs,s-nail,vi,xfsprogs,man-pages,systemd'
     rm -rf /var/lib/pacman/db.lck
-    yes | pacman -Syy
+    yes | pacman -Syu
     yes | pacman -Sy base-devel arch-install-scripts --noconfirm
     yes | pacstrap -i $newroot $pkgs --noconfirm --ignore $ignore_pkgs
     cp -r /etc/pacman* ./root/etc/
