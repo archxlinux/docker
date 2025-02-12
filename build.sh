@@ -1,12 +1,11 @@
 #!/bin/bash
 
-set -e
 
 setup_root() {
     # Set up the new root directory
     newroot=./root
     mkdir $newroot
-    pkgs='archxlinux-keyring bash coreutils pacman ca-certificates'
+    pkgs='archxlinux-keyring archlinux-keyring bash coreutils pacman ca-certificates'
     ignore_pkgs='jfsutils,nano,netctl,reiserfsprogs,s-nail,vi,xfsprogs,man-pages'
     rm -rf /var/lib/pacman/db.lck
     yes | pacman -Syu
@@ -28,4 +27,3 @@ tar_rootfs
 
 
 rm -rf ./root
-
